@@ -1,13 +1,141 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap');
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+.main{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.weather{
+  position: relative;
+  width: 260px;
+  height: 320px;
+  /* border: 1px solid black; */
+  border-radius: 4px;
+  background-color: rgb(182, 206, 250);
+  box-shadow: 2px 2px 15px rgb(192, 192, 192);
+  text-align: center;
+  overflow: hidden;
+}
+.weather input{
+  width: 140px;
+  height: 40px;
+  border-radius: 25px;
+  margin-top: 10px;
+}
+.weather h1{
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 500;
+  margin-top: 70px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.weather h3{
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-top: 30px;
+  margin-bottom: 8px;
+  
 }
+.weather p{
+  font-size: 0.7rem;
+  color: rgb(95, 95, 95);
+}
+#spane i{
+  animation: move 1s ease-in-out infinite alternate-reverse both;
+  color:white;
+  margin-right: 5px;
+}
+@keyframes move{
+  0%{
+    transform: translateX(5px);
+  }
+  100%{
+    transform: translateX(-5px);
+  }
+}
+.cycle2{
+  position: absolute;
+  /* border : 1px solid black; */
+  width: 390px;
+  height: 390px;
+  opacity: 0.2;
+  top: 59%;
+  border-radius: 47%;
+  left: -20%;
+  animation: rotate 0.5s ease-in infinite alternate-reverse forwards;
+  background-color: white;
+  z-index: 3 !important;
+}
+.cycle3{
+  position: absolute;
+  /* border : 1px solid black; */
+  width: 350px;
+  opacity: 0.3;
+  height: 350px;
+  top: 57%;
+  border-radius: 47%;
+  left: -20%;
+  animation: rotate 0.5s ease-in infinite alternate-reverse forwards;
+  background-color: white;
+  z-index: 2 !important;
+
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+} 
+
+.cycle1{
+  position: absolute;
+  /* border : 1px solid black; */
+  width: 400px;
+  height: 400px;
+  opacity: 0.1;
+  top: 56%;
+  border-radius: 45%;
+  left: -25%;
+  animation: rotate 0.7s ease-in infinite reverse backwards;
+  background-color: white;
+  z-index: 1 !important;
+}
+
+@keyframes rotate{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(180deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
