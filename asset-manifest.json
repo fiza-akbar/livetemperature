@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/livetemperature/static/css/main.d53e6f25.css",
+    "main.js": "/livetemperature/static/js/main.54edeecc.js",
+    "index.html": "/livetemperature/index.html",
+    "main.d53e6f25.css.map": "/livetemperature/static/css/main.d53e6f25.css.map",
+    "main.54edeecc.js.map": "/livetemperature/static/js/main.54edeecc.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d53e6f25.css",
+    "static/js/main.54edeecc.js"
+  ]
+}
